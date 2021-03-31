@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="8ma-tb-94c">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PiccollageQuiz1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YpZ-pN-Hj1" customClass="GPUImageView">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="YpZ-pN-Hj1" secondAttribute="bottom" id="0Dj-lr-AOc"/>
+                            <constraint firstItem="YpZ-pN-Hj1" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="2Zh-YD-T2u"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="YpZ-pN-Hj1" secondAttribute="trailing" id="Lkk-PO-V3q"/>
+                            <constraint firstItem="YpZ-pN-Hj1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="jJl-tS-rSt"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Home" id="s1b-IK-I9k">
+                        <barButtonItem key="rightBarButtonItem" title="Next" id="bF2-H9-Tcl">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <segue destination="t4Z-ym-nXu" kind="show" id="U9j-H6-5sa"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="gpuImageView" destination="YpZ-pN-Hj1" id="HJl-ZJ-qvR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="697.10144927536237" y="114.50892857142857"/>
+        </scene>
+        <!--Quiz2VC-->
+        <scene sceneID="f8x-Bi-xgp">
+            <objects>
+                <viewController id="t4Z-ym-nXu" customClass="Quiz2VC" customModule="PiccollageQuiz1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="EeP-bl-thF">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A5d-Hk-CWD" customClass="GPUImageView">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="G0F-8Z-JYh"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="G0F-8Z-JYh" firstAttribute="trailing" secondItem="A5d-Hk-CWD" secondAttribute="trailing" id="7PU-Qj-zIe"/>
+                            <constraint firstItem="A5d-Hk-CWD" firstAttribute="leading" secondItem="G0F-8Z-JYh" secondAttribute="leading" id="N3o-nK-Ku3"/>
+                            <constraint firstItem="A5d-Hk-CWD" firstAttribute="top" secondItem="G0F-8Z-JYh" secondAttribute="top" id="TXt-NZ-V19"/>
+                            <constraint firstItem="G0F-8Z-JYh" firstAttribute="bottom" secondItem="A5d-Hk-CWD" secondAttribute="bottom" id="hbE-w6-ufD"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Nts-ju-Utk">
+                        <barButtonItem key="rightBarButtonItem" title="Select" id="uNi-lT-fVY">
+                            <connections>
+                                <action selector="selectDidTapped:" destination="t4Z-ym-nXu" id="MMi-Va-uEH"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="gpuImageView" destination="A5d-Hk-CWD" id="aVJ-T1-kga"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="J1n-ad-bK3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1652" y="115"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="f7E-MP-vrA">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="8ma-tb-94c" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="EzN-1W-ONR">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="XG0-cF-1Fv"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="N37-7g-tDQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-213.04347826086959" y="114.50892857142857"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
