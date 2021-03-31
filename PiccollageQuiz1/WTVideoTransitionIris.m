@@ -34,7 +34,7 @@ NSString *const kGPUImageWTIrisBlendFragmentShaderString = SHADER_STRING
  }
 );
 
-@interface WTVideoTransitionIris ()
+@interface WTVideoTransitionIrisFilter ()
 {
     GLuint uniform_ra;
     GLuint uniform_ro;
@@ -47,7 +47,7 @@ NSString *const kGPUImageWTIrisBlendFragmentShaderString = SHADER_STRING
 
 @end
 
-@implementation WTVideoTransitionIris
+@implementation WTVideoTransitionIrisFilter
 
 - (instancetype)initWithSize:(CGSize)size duration:(float)duration
 {

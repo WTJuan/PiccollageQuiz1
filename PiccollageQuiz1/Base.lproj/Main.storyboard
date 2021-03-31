@@ -18,7 +18,29 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YpZ-pN-Hj1" customClass="GPUImageView">
                                 <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p6E-Da-XJi">
+                                        <rect key="frame" x="8" y="8" width="60" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="60" id="ixy-us-MQn"/>
+                                        </constraints>
+                                        <state key="normal" title="Effect"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JDi-Dm-Hm1">
+                                        <rect key="frame" x="100" y="8" width="60" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="60" id="Zw5-I7-vG2"/>
+                                        </constraints>
+                                        <state key="normal" title="Process"/>
+                                    </button>
+                                </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="JDi-Dm-Hm1" firstAttribute="leading" secondItem="p6E-Da-XJi" secondAttribute="trailing" constant="32" id="Ipp-Yn-N7h"/>
+                                    <constraint firstItem="p6E-Da-XJi" firstAttribute="top" secondItem="YpZ-pN-Hj1" secondAttribute="top" constant="8" id="OXb-Tx-sZ1"/>
+                                    <constraint firstItem="JDi-Dm-Hm1" firstAttribute="top" secondItem="p6E-Da-XJi" secondAttribute="top" id="UX8-kq-C59"/>
+                                    <constraint firstItem="p6E-Da-XJi" firstAttribute="leading" secondItem="YpZ-pN-Hj1" secondAttribute="leading" constant="8" id="l3k-o3-YAe"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -31,6 +53,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Home" id="s1b-IK-I9k">
+                        <barButtonItem key="leftBarButtonItem" title="Select" id="5IU-dD-hqB">
+                            <connections>
+                                <action selector="selectDidTapped:" destination="BYZ-38-t0r" id="a7P-Iq-g3B"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Next" id="bF2-H9-Tcl">
                             <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
@@ -39,7 +66,9 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="effectButton" destination="p6E-Da-XJi" id="el7-47-WUl"/>
                         <outlet property="gpuImageView" destination="YpZ-pN-Hj1" id="HJl-ZJ-qvR"/>
+                        <outlet property="processButton" destination="JDi-Dm-Hm1" id="L0I-iF-YpL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

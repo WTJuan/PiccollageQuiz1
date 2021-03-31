@@ -26,7 +26,6 @@ class WTVideoFramCache: GPUImageBuffer {
     }
     
     override func newFrameReady(at frameTime: CMTime, at textureIndex: Int) {
-        //print(CMTimeGetSeconds(frameTime))
         var frameTimeC = frameTime
         if(timestampCache.count >= bufferSize) {
             frameTimeC = timestampCache.first!

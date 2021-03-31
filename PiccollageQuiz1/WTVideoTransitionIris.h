@@ -8,7 +8,7 @@
 #import <Foundation/Foundation.h>
 #import <GPUImage/GPUImageTwoInputFilter.h>
 
-@interface WTVideoTransitionIris : GPUImageTwoInputFilter
+@interface WTVideoTransitionIrisFilter : GPUImageTwoInputFilter
 
 - (instancetype)initWithSize:(CGSize)size duration:(float)duration;
 
