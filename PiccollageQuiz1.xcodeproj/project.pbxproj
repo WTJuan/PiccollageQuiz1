@@ -25,7 +25,6 @@
 		243C5144260EADEA0036E457 /* IMG_2174.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 243C5142260EADE80036E457 /* IMG_2174.mp4 */; };
 		243C5145260EADEA0036E457 /* IMG_2175.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 243C5143260EADE80036E457 /* IMG_2175.mp4 */; };
 		243C5147260ECEBD0036E457 /* Quiz2VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243C5146260ECEBC0036E457 /* Quiz2VC.swift */; };
-		243C5149260F33810036E457 /* WTVideoTransitionFrameCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243C5148260F33800036E457 /* WTVideoTransitionFrameCache.swift */; };
 		244169EB26120D4200DDB167 /* WTVideoFramCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244169EA26120D4200DDB167 /* WTVideoFramCache.swift */; };
 		24DF02FC2614AB950082128E /* WTVideoTransitionIris.m in Sources */ = {isa = PBXBuildFile; fileRef = 24DF02FB2614AB950082128E /* WTVideoTransitionIris.m */; };
 		24DF03012614BE750082128E /* WTVideoTransitionDissolveFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24DF03002614BE750082128E /* WTVideoTransitionDissolveFilter.swift */; };
@@ -91,7 +90,6 @@
 		243C5142260EADE80036E457 /* IMG_2174.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = IMG_2174.mp4; sourceTree = "<group>"; };
 		243C5143260EADE80036E457 /* IMG_2175.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = IMG_2175.mp4; sourceTree = "<group>"; };
 		243C5146260ECEBC0036E457 /* Quiz2VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quiz2VC.swift; sourceTree = "<group>"; };
-		243C5148260F33800036E457 /* WTVideoTransitionFrameCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WTVideoTransitionFrameCache.swift; sourceTree = "<group>"; };
 		243C514B260F85870036E457 /* PiccollageQuiz1-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PiccollageQuiz1-Bridging-Header.h"; sourceTree = "<group>"; };
 		244169EA26120D4200DDB167 /* WTVideoFramCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WTVideoFramCache.swift; sourceTree = "<group>"; };
 		24DF02FB2614AB950082128E /* WTVideoTransitionIris.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTVideoTransitionIris.m; sourceTree = "<group>"; };
@@ -150,15 +148,14 @@
 				243C50BE260CE8D20036E457 /* WTVideoEditor.swift */,
 				24DF03062614BF240082128E /* WTVideoReader.swift */,
 				243C50DF260E25FD0036E457 /* WTVideoTransitionEffect.swift */,
-				243C5148260F33800036E457 /* WTVideoTransitionFrameCache.swift */,
 				244169EA26120D4200DDB167 /* WTVideoFramCache.swift */,
 				24DF02FD2614ABC60082128E /* WTVideoTransitionIris.h */,
 				24DF02FB2614AB950082128E /* WTVideoTransitionIris.m */,
 				24DF03002614BE750082128E /* WTVideoTransitionDissolveFilter.swift */,
+				24DF03082614C3890082128E /* WTVideoUtli.swift */,
 				243C514B260F85870036E457 /* PiccollageQuiz1-Bridging-Header.h */,
 				243C5142260EADE80036E457 /* IMG_2174.mp4 */,
 				243C5143260EADE80036E457 /* IMG_2175.mp4 */,
-				24DF03082614C3890082128E /* WTVideoUtli.swift */,
 			);
 			path = PiccollageQuiz1;
 			sourceTree = "<group>";
@@ -289,7 +286,6 @@
 				244169EB26120D4200DDB167 /* WTVideoFramCache.swift in Sources */,
 				243C50AA260CE41E0036E457 /* AppDelegate.swift in Sources */,
 				24DF03012614BE750082128E /* WTVideoTransitionDissolveFilter.swift in Sources */,
-				243C5149260F33810036E457 /* WTVideoTransitionFrameCache.swift in Sources */,
 				243C50AC260CE41E0036E457 /* SceneDelegate.swift in Sources */,
 				24DF02FC2614AB950082128E /* WTVideoTransitionIris.m in Sources */,
 				243C50E0260E25FD0036E457 /* WTVideoTransitionEffect.swift in Sources */,

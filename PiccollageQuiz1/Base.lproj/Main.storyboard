@@ -33,12 +33,21 @@
                                         </constraints>
                                         <state key="normal" title="Process"/>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cEZ-4J-wlr">
+                                        <rect key="frame" x="206" y="8" width="48" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="48" id="YF8-G2-7Vo"/>
+                                        </constraints>
+                                        <state key="normal" title="Clear"/>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
+                                    <constraint firstItem="cEZ-4J-wlr" firstAttribute="top" secondItem="JDi-Dm-Hm1" secondAttribute="top" id="9ZT-mg-EFb"/>
                                     <constraint firstItem="JDi-Dm-Hm1" firstAttribute="leading" secondItem="p6E-Da-XJi" secondAttribute="trailing" constant="32" id="Ipp-Yn-N7h"/>
                                     <constraint firstItem="p6E-Da-XJi" firstAttribute="top" secondItem="YpZ-pN-Hj1" secondAttribute="top" constant="8" id="OXb-Tx-sZ1"/>
                                     <constraint firstItem="JDi-Dm-Hm1" firstAttribute="top" secondItem="p6E-Da-XJi" secondAttribute="top" id="UX8-kq-C59"/>
+                                    <constraint firstItem="cEZ-4J-wlr" firstAttribute="leading" secondItem="JDi-Dm-Hm1" secondAttribute="trailing" constant="46" id="iZx-tK-Fs4"/>
                                     <constraint firstItem="p6E-Da-XJi" firstAttribute="leading" secondItem="YpZ-pN-Hj1" secondAttribute="leading" constant="8" id="l3k-o3-YAe"/>
                                 </constraints>
                             </view>
@@ -66,6 +75,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="clearButton" destination="cEZ-4J-wlr" id="t1D-cL-sCZ"/>
                         <outlet property="effectButton" destination="p6E-Da-XJi" id="el7-47-WUl"/>
                         <outlet property="gpuImageView" destination="YpZ-pN-Hj1" id="HJl-ZJ-qvR"/>
                         <outlet property="processButton" destination="JDi-Dm-Hm1" id="L0I-iF-YpL"/>
